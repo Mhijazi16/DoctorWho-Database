@@ -23,4 +23,10 @@ VALUES (1, 1, 1, 'Episode Type 1', 'Episode Title 1', '2022-01-01', 1, 1, 'Notes
        (3, 2, 1, 'Episode Type 1', 'Episode Title 3', '2022-02-01', 3, 3, 'Notes 3'),
        (4, 2, 2, 'Episode Type 2', 'Episode Title 4', '2022-02-02', 5, 2, 'Notes 4'),
        (5, 3, 1, 'Episode Type 1', 'Episode Title 5', '2022-03-01', 5, 5, 'Notes 5');
-       
+
+INSERT INTO tblEnemy (EnemyID, EnemyName, Description)
+VALUES (1, 'Enemy 1', 'Description 1'),
+       (2, 'Enemy 2', 'Description 2'),
+       (3, 'Enemy 3', 'Description 3'),
+       (4, 'Enemy 4', 'Description 4'),
+       (5, 'Enemy 5', 'Description 5');
