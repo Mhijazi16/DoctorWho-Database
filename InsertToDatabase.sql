@@ -44,3 +44,10 @@ VALUES (1, 1, 1),
        (3, 3, 3),
        (4, 4, 4),
        (5, 5, 4);
+
+INSERT INTO tblEpisodeEnemy (EpisodeEnemyID, EpisodeID, EnemyID)
+VALUES (1, 1, 5),
+       (2, 2, 2),
+       (3, 3, 3),
+       (4, 4, 2),
+       (5, 5, 5);
