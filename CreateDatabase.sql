@@ -63,3 +63,13 @@ CREATE TABLE tblCompanion
     CHECK (LEN(CompanionName) <= 30),
     CHECK (LEN(WhoPlayed) <= 30),
 );
+
+CREATE TABLE tblEpisodeCompanion
+(
+    EpisodeCompanionID INT PRIMARY KEY, 
+    EpisodeID INT, 
+    CompanionID INT, 
+
+    FOREIGN KEY (EpisodeID) REFERENCES tblEpisode(EpisodeID),
+    FOREIGN KEY (CompanionID) REFERENCES tblCompanion(CompanionID), 
+);
