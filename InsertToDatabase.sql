@@ -30,3 +30,10 @@ VALUES (1, 'Enemy 1', 'Description 1'),
        (3, 'Enemy 3', 'Description 3'),
        (4, 'Enemy 4', 'Description 4'),
        (5, 'Enemy 5', 'Description 5');
+
+INSERT INTO tblCompanion (CompanionID, CompanionName, WhoPlayed)
+VALUES (1, 'Companion 1', 'Actor 1'),
+       (2, 'Companion 2', 'Actor 2'),
+       (3, 'Companion 3', 'Actor 3'),
+       (4, 'Companion 4', 'Actor 4'),
+       (5, 'Companion 5', 'Actor 5');
