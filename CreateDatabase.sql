@@ -43,3 +43,13 @@ CREATE TABLE tblEpisode
     CHECK (LEN(Title) <= 35),
     CHECK (LEN(Notes) <= 255)
 );
+
+CREATE TABLE tblEnemy
+(
+    EnemyID INT PRIMARY KEY, 
+    EnemyName VARCHAR(40) NOT NULL, 
+    Description NVARCHAR(500), 
+
+    CHECK (LEN(EnemyName) <= 40),
+    CHECK (LEN(Description) <= 500),
+);
