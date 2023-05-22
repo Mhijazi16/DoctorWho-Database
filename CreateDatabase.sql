@@ -53,3 +53,13 @@ CREATE TABLE tblEnemy
     CHECK (LEN(EnemyName) <= 40),
     CHECK (LEN(Description) <= 500),
 );
+
+CREATE TABLE tblCompanion
+(
+    CompanionID INT PRIMARY KEY,
+    CompanionName VARCHAR(30)  NOT NULL, 
+    WhoPlayed VARCHAR(30),   
+
+    CHECK (LEN(CompanionName) <= 30),
+    CHECK (LEN(WhoPlayed) <= 30),
+);
