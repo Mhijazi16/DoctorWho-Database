@@ -37,3 +37,10 @@ VALUES (1, 'Companion 1', 'Actor 1'),
        (3, 'Companion 3', 'Actor 3'),
        (4, 'Companion 4', 'Actor 4'),
        (5, 'Companion 5', 'Actor 5');
+
+INSERT INTO tblEpisodeCompanion (EpisodeCompanionID, EpisodeID, CompanionID)
+VALUES (1, 1, 1),
+       (2, 2, 2),
+       (3, 3, 3),
+       (4, 4, 4),
+       (5, 5, 4);
