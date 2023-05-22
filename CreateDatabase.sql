@@ -73,3 +73,13 @@ CREATE TABLE tblEpisodeCompanion
     FOREIGN KEY (EpisodeID) REFERENCES tblEpisode(EpisodeID),
     FOREIGN KEY (CompanionID) REFERENCES tblCompanion(CompanionID), 
 );
+
+CREATE TABLE tblEpisodeEnemy
+(
+    EpisodeEnemyID INT PRIMARY KEY, 
+    EpisodeID INT, 
+    EnemyID INT, 
+
+    FOREIGN KEY (EpisodeID) REFERENCES tblEpisode(EpisodeID), 
+    FOREIGN KEY (EnemyID)   REFERENCES tblEnemy(EnemyID), 
+);
