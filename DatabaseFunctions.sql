@@ -33,3 +33,13 @@ RETURN @names
 END;
 
 GO 
+
+CREATE VIEW viewEpisodes AS
+SELECT e.EpisodeID, e.AuthorID, e.DoctorID, e.Title, a.AuthorName, d.DoctorName, e.SeriesNumber, 
+                dbo.fnEnemies(e.EpisodeID) AS Enemies, dbo.fnCompanions(e.EpisodeID) AS Companions,
+                 e.EpisodeNumber,e.EpisodeType, e.EpisodeDate, e.Notes
+FROM tblEpisode e
+LEFT JOIN tblDoctor d ON e.DoctorID = d.DoctorID
+LEFT JOIN tblAuthor a ON e.AuthorID = a.AuthorID;
+
+GO 
