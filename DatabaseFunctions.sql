@@ -43,3 +43,19 @@ LEFT JOIN tblDoctor d ON e.DoctorID = d.DoctorID
 LEFT JOIN tblAuthor a ON e.AuthorID = a.AuthorID;
 
 GO 
+
+CREATE PROCEDURE spSummariseEpisodes
+AS
+BEGIN
+    SELECT EnemyName FROM tblEnemy
+    WHERE EnemyID IN
+    (
+        SELECT TOP(3) EnemyID
+        FROM tblEpisodeEnemy
+        GROUP BY EnemyID
+        ORDER BY COUNT(EpisodeID) DESC  
+    );
+
+END;
+
+GO
