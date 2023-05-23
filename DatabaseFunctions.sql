@@ -56,6 +56,14 @@ BEGIN
         ORDER BY COUNT(EpisodeID) DESC  
     );
 
+    SELECT CompanionName FROM tblCompanion
+    WHERE CompanionID IN
+    (
+        SELECT TOP(3) CompanionID
+        FROM tblEpisodeCompanion
+        GROUP BY CompanionID
+        ORDER BY COUNT(EpisodeID) DESC  
+    ); 
 END;
 
 GO
